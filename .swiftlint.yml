@@ -1,0 +1,21 @@
+excluded:
+- Pods
+- RunScripts/main.swift
+- BusinessDay/Generated/AssetsImages-Generated.swift
+- BusinessDay/Image Catalog Tests/Generated/AssetsImagesTests-Generated
+
+disabled_rules:
+- type_body_length
+- file_length
+
+line_length:
+  warning: 140
+  error: 200
+
+identifier_name:
+  min_length: # only min_length
+    error: 3 # only error
+  excluded: # excluded via string array
+    - id
+    - URL
+    - ad

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BDFeaturedArticleCell" id="Vao-f9-nbC" customClass="BDFeaturedArticleCell" customModule="BusinessDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="463"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vao-f9-nbC" id="eD6-kk-Rzz">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="463"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95g-Y5-KCS" customClass="AdContainerView" customModule="CosmosKit">
+                        <rect key="frame" x="4" y="0.0" width="367" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="W9b-v9-xLc"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                        <rect key="frame" x="4" y="0.0" width="367" height="463"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Geu-vt-Y3o">
+                                <rect key="frame" x="0.0" y="0.0" width="367" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="LiN-G7-7D9"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Q8H-BD-oFq">
+                                <rect key="frame" x="16" y="301" width="335" height="146"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdH-WS-EuD">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="10"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYh-bP-ooT" userLabel="Block" customClass="SectionBlock" customModule="BusinessDay" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="3K0-YW-g1y"/>
+                                                    <constraint firstAttribute="width" constant="10" id="HHM-zU-MyS"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3l-j3-r7R" customClass="BDSectionLabel" customModule="BusinessDay" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="-5" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="D3l-j3-r7R" firstAttribute="leading" secondItem="TYh-bP-ooT" secondAttribute="trailing" constant="8" id="3UE-2k-p2z"/>
+                                            <constraint firstItem="TYh-bP-ooT" firstAttribute="top" secondItem="gdH-WS-EuD" secondAttribute="top" id="QeN-Wp-Ccv"/>
+                                            <constraint firstItem="TYh-bP-ooT" firstAttribute="leading" secondItem="gdH-WS-EuD" secondAttribute="leading" id="RIt-7p-AAW"/>
+                                            <constraint firstItem="D3l-j3-r7R" firstAttribute="centerY" secondItem="TYh-bP-ooT" secondAttribute="centerY" id="SkB-ln-pzZ"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D3l-j3-r7R" secondAttribute="trailing" constant="16" id="aVq-Uf-zEu"/>
+                                            <constraint firstAttribute="bottom" secondItem="TYh-bP-ooT" secondAttribute="bottom" id="wse-GQ-bbN"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Heading Heading Heading Heading" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6v-8V-jKb" customClass="BDFeaturedTitleLabel" customModule="BusinessDay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="14" width="335" height="85.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpg-Vo-lo6" customClass="BDSynopsisLabel" customModule="BusinessDay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="103.5" width="335" height="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="pb7-V4-wYS">
+                                        <rect key="frame" x="0.0" y="125.5" width="335" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgE-do-zY8" customClass="BDTimeLabel" customModule="BusinessDay" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="label-Sponsored" translatesAutoresizingMaskIntoConstraints="NO" id="aaf-4t-SAo">
+                                <rect key="frame" x="287" y="285" width="80" height="23"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="aMW-R2-ndn">
+                                <rect key="frame" x="16" y="16" width="28" height="28"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Q8H-BD-oFq" secondAttribute="trailing" constant="16" id="6SP-aL-nWb"/>
+                            <constraint firstAttribute="trailing" secondItem="aaf-4t-SAo" secondAttribute="trailing" id="FeY-eT-gn5"/>
+                            <constraint firstItem="aMW-R2-ndn" firstAttribute="leading" secondItem="Geu-vt-Y3o" secondAttribute="leading" constant="16" id="JVW-Ho-4Y3"/>
+                            <constraint firstItem="Q8H-BD-oFq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="MUW-tG-uBu"/>
+                            <constraint firstItem="Geu-vt-Y3o" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="Wvl-77-oaO"/>
+                            <constraint firstItem="aMW-R2-ndn" firstAttribute="top" secondItem="Geu-vt-Y3o" secondAttribute="top" constant="16" id="XpG-ey-Ixt"/>
+                            <constraint firstAttribute="bottom" secondItem="Q8H-BD-oFq" secondAttribute="bottom" constant="16" id="f1P-wO-4e4"/>
+                            <constraint firstItem="aaf-4t-SAo" firstAttribute="top" secondItem="Geu-vt-Y3o" secondAttribute="bottom" id="fHb-I9-Eiy"/>
+                            <constraint firstItem="Q8H-BD-oFq" firstAttribute="top" secondItem="Geu-vt-Y3o" secondAttribute="bottom" constant="16" id="jgF-76-Kg3"/>
+                            <constraint firstItem="Geu-vt-Y3o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kVY-hx-TXe"/>
+                            <constraint firstItem="Geu-vt-Y3o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lgb-0g-7Ca"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k77-l3-ohB" customClass="AdContainerView" customModule="CosmosKit">
+                        <rect key="frame" x="4" y="463" width="367" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="L4Q-p7-kYX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="95g-Y5-KCS" firstAttribute="top" secondItem="eD6-kk-Rzz" secondAttribute="top" id="2h2-NQ-Brs"/>
+                    <constraint firstItem="k77-l3-ohB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5xO-8R-fgW"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="eD6-kk-Rzz" secondAttribute="leadingMargin" constant="-16" id="UAd-vZ-9r0"/>
+                    <constraint firstAttribute="bottom" secondItem="k77-l3-ohB" secondAttribute="bottom" id="Wq8-UA-ifw"/>
+                    <constraint firstItem="95g-Y5-KCS" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="e0L-L9-ZC2"/>
+                    <constraint firstItem="k77-l3-ohB" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="f6V-pI-mDt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-16" id="pfb-L4-3VP"/>
+                    <constraint firstItem="95g-Y5-KCS" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="top" id="rxi-6I-wk7"/>
+                    <constraint firstItem="k77-l3-ohB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" id="seB-Hh-rJS"/>
+                    <constraint firstItem="95g-Y5-KCS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="whm-TJ-ZSv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="articleImage" destination="Geu-vt-Y3o" id="tTE-hU-R78"/>
+                <outlet property="bottomAdView" destination="k77-l3-ohB" id="oVT-mx-82R"/>
+                <outlet property="bottomAdViewHeightConstraint" destination="L4Q-p7-kYX" id="Qq0-Td-wbR"/>
+                <outlet property="imageHeightConstraint" destination="LiN-G7-7D9" id="Dwm-i0-LT6"/>
+                <outlet property="sectionBlock" destination="TYh-bP-ooT" id="lSx-Ke-ofC"/>
+                <outlet property="sectionLabel" destination="D3l-j3-r7R" id="4jx-a2-lzF"/>
+                <outlet property="sponsor" destination="aaf-4t-SAo" id="mb5-Tc-uUE"/>
+                <outlet property="synopsisLabel" destination="xpg-Vo-lo6" id="Hkd-tD-BZZ"/>
+                <outlet property="timeLabel" destination="bgE-do-zY8" id="QMT-Wt-Ev2"/>
+                <outlet property="titleLabel" destination="n6v-8V-jKb" id="rnb-bE-fyw"/>
+                <outlet property="topAdView" destination="95g-Y5-KCS" id="h2k-Sk-JwP"/>
+                <outlet property="topAdViewHeightConstraint" destination="W9b-v9-xLc" id="OFV-OH-jF9"/>
+                <outlet property="videoIcon" destination="aMW-R2-ndn" id="XYr-3l-6Dj"/>
+                <outlet property="wrapperView" destination="iN0-l3-epB" id="Jli-Xi-OpU"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="label-Sponsored" width="80" height="23"/>
+        <image name="videoIcon" width="28" height="28"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

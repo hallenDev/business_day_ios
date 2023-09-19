@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RegistrationWallView" customModule="BusinessDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="This article is free to read for registered readers. Registration is quick and free." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-QD-bKF" customClass="BDBlockerLabelShort" customModule="BusinessDay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="16" width="343" height="34"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-Dynamic" translatesAutoresizingMaskIntoConstraints="NO" id="g7c-TN-MYL">
+                    <rect key="frame" x="0.0" y="70" width="375" height="40"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already registered? Just sign in below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17j-RJ-g9L" customClass="BDBlockerLabelLengthy" customModule="BusinessDay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="126" width="343" height="14.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="cj8-X0-sRV">
+                    <rect key="frame" x="40" y="160.5" width="295" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgr-75-ye2" customClass="BDBlockerButton" customModule="BusinessDay" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="140.5" height="44"/>
+                            <color key="backgroundColor" name="BrandPrimary"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="5OB-Vf-qvG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="tintColor" name="Text"/>
+                            <state key="normal" title="SIGN IN">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="signIn:" destination="iN0-l3-epB" eventType="touchUpInside" id="1TF-sg-T7W"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhm-tl-Lq3" customClass="BDBlockerButton" customModule="BusinessDay" customModuleProvider="target">
+                            <rect key="frame" x="154.5" y="0.0" width="140.5" height="44"/>
+                            <color key="backgroundColor" name="BrandPrimary"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Ir7-3F-aYQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="tintColor" red="0.76862745099999996" green="0.054901960780000002" blue="0.23921568630000001" alpha="1" colorSpace="deviceRGB"/>
+                            <state key="normal" title="REGISTER">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="register:" destination="iN0-l3-epB" eventType="touchUpInside" id="20K-Zj-bz4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XYJ-C4-qLe" customClass="BDBlockerTextView" customModule="BusinessDay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="220.5" width="343" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="BrandPrimary"/>
+                    <string key="text">Questions or problems?
+Email helpdesk@businesslive.co.za or call 0860 52 52 00.</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="g7c-TN-MYL" secondAttribute="trailing" id="4L9-pg-ME7"/>
+                <constraint firstItem="rOW-QD-bKF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Abd-TO-3ru"/>
+                <constraint firstItem="g7c-TN-MYL" firstAttribute="top" secondItem="rOW-QD-bKF" secondAttribute="bottom" constant="20" id="AjZ-vQ-8Nv"/>
+                <constraint firstItem="g7c-TN-MYL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EQJ-WR-xwQ"/>
+                <constraint firstItem="17j-RJ-g9L" firstAttribute="top" secondItem="g7c-TN-MYL" secondAttribute="bottom" constant="16" id="FfH-aA-cOW"/>
+                <constraint firstItem="cj8-X0-sRV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="HcY-ii-FUP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XYJ-C4-qLe" secondAttribute="trailing" constant="16" id="Ree-zL-KR7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cj8-X0-sRV" secondAttribute="trailing" constant="40" id="VH2-ca-OMW"/>
+                <constraint firstItem="cj8-X0-sRV" firstAttribute="top" secondItem="17j-RJ-g9L" secondAttribute="bottom" constant="20" id="Zv8-8T-u3Y"/>
+                <constraint firstItem="17j-RJ-g9L" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="aaM-j1-53q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="17j-RJ-g9L" secondAttribute="trailing" constant="16" id="avP-ot-R4B"/>
+                <constraint firstItem="g7c-TN-MYL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fGB-Ya-OAI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XYJ-C4-qLe" secondAttribute="bottom" constant="16" id="gTe-Zj-E4b"/>
+                <constraint firstItem="rOW-QD-bKF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="gUE-Uy-m0f"/>
+                <constraint firstItem="XYJ-C4-qLe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="piH-0o-RVq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rOW-QD-bKF" secondAttribute="trailing" constant="16" id="puc-fp-xTb"/>
+                <constraint firstItem="XYJ-C4-qLe" firstAttribute="top" secondItem="cj8-X0-sRV" secondAttribute="bottom" constant="16" id="pzj-is-ffA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="g7c-TN-MYL" secondAttribute="trailing" id="tT4-Sc-eop"/>
+            </constraints>
+            <connections>
+                <outlet property="registerButton" destination="fhm-tl-Lq3" id="YPE-Fi-pTM"/>
+                <outlet property="signInButton" destination="kgr-75-ye2" id="j8Z-uY-41t"/>
+                <outlet property="text1" destination="rOW-QD-bKF" id="z6H-ZT-LYu"/>
+                <outlet property="text2" destination="17j-RJ-g9L" id="y3V-Ut-4kz"/>
+                <outlet property="text3" destination="XYJ-C4-qLe" id="mQU-i8-fgt"/>
+            </connections>
+            <point key="canvasLocation" x="17.5" y="75.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-Dynamic" width="241" height="40"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandPrimary">
+            <color red="0.80400002002716064" green="0.093999996781349182" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.14509803921568629" green="0.14509803921568629" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

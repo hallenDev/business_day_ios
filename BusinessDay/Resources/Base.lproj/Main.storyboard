@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9n6-fI-Y7T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab View Controller-->
+        <scene sceneID="YcR-t8-gkD">
+            <objects>
+                <viewController storyboardIdentifier="TabViewController" id="xGa-Nz-6V5" customClass="TabViewController" customModule="BusinessDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="1Hz-pe-baf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XwC-Bn-Htg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="36.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dby-e2-Hdt" customClass="HeaderLabel" customModule="CosmosKit">
+                                        <rect key="frame" x="190.5" y="8" width="33" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BrandPrimary"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36.5" id="1V9-gs-PGZ"/>
+                                    <constraint firstItem="Dby-e2-Hdt" firstAttribute="centerX" secondItem="XwC-Bn-Htg" secondAttribute="centerX" id="f1N-FK-rHE"/>
+                                    <constraint firstItem="Dby-e2-Hdt" firstAttribute="centerY" secondItem="XwC-Bn-Htg" secondAttribute="centerY" id="toj-ne-aYU"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNA-62-8Gd">
+                                <rect key="frame" x="0.0" y="96.5" width="414" height="24"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="HQI-H1-FY4"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KMO-tF-k3S">
+                                    <size key="itemSize" width="128" height="24"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" layoutMarginsFollowReadableWidth="YES" reuseIdentifier="TabCell" id="DpL-Rf-HMK" customClass="TabCollectionViewCell" customModule="BusinessDay" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="128" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TX8-mW-Aff">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82M-GC-gky" customClass="TabLabel" customModule="BusinessDay" customModuleProvider="target">
+                                                    <rect key="frame" x="43" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUg-nx-klv">
+                                                    <rect key="frame" x="43" y="21" width="42" height="3"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="3" id="Ovn-nc-8jb"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="82M-GC-gky" firstAttribute="top" secondItem="TX8-mW-Aff" secondAttribute="top" id="2aV-bT-Umb"/>
+                                                <constraint firstItem="ZUg-nx-klv" firstAttribute="trailing" secondItem="82M-GC-gky" secondAttribute="trailing" id="5Zt-TL-cmy"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="82M-GC-gky" secondAttribute="trailing" constant="16" id="6Ng-mB-HYW"/>
+                                                <constraint firstItem="82M-GC-gky" firstAttribute="centerX" secondItem="TX8-mW-Aff" secondAttribute="centerX" id="7MG-zo-J4j"/>
+                                                <constraint firstItem="ZUg-nx-klv" firstAttribute="leading" secondItem="82M-GC-gky" secondAttribute="leading" id="ZMZ-iP-VCW"/>
+                                                <constraint firstItem="ZUg-nx-klv" firstAttribute="centerX" secondItem="82M-GC-gky" secondAttribute="centerX" id="e1u-69-RGK"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZUg-nx-klv" secondAttribute="bottom" id="mab-Cl-Rat"/>
+                                                <constraint firstItem="82M-GC-gky" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TX8-mW-Aff" secondAttribute="leadingMargin" constant="16" id="qiJ-ig-Obj"/>
+                                                <constraint firstItem="ZUg-nx-klv" firstAttribute="top" secondItem="82M-GC-gky" secondAttribute="bottom" id="tLI-KH-qNK"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="selectedView" destination="ZUg-nx-klv" id="cVK-h2-EtL"/>
+                                            <outlet property="title" destination="82M-GC-gky" id="jQS-CA-VAk"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="xGa-Nz-6V5" id="ArB-4A-g6W"/>
+                                    <outlet property="delegate" destination="xGa-Nz-6V5" id="ojc-VF-FgB"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="az4-f7-lJd"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="xNA-62-8Gd" firstAttribute="top" secondItem="XwC-Bn-Htg" secondAttribute="bottom" constant="16" id="1kq-oN-mo4"/>
+                            <constraint firstItem="xNA-62-8Gd" firstAttribute="leading" secondItem="1Hz-pe-baf" secondAttribute="leadingMargin" constant="-20" id="FtD-Fp-Hqm"/>
+                            <constraint firstItem="xNA-62-8Gd" firstAttribute="trailing" secondItem="1Hz-pe-baf" secondAttribute="trailingMargin" constant="20" id="GQM-7J-zkF"/>
+                            <constraint firstItem="XwC-Bn-Htg" firstAttribute="leading" secondItem="az4-f7-lJd" secondAttribute="leading" id="YVe-mK-zjV"/>
+                            <constraint firstItem="XwC-Bn-Htg" firstAttribute="trailing" secondItem="az4-f7-lJd" secondAttribute="trailing" id="fBq-aH-84l"/>
+                            <constraint firstItem="XwC-Bn-Htg" firstAttribute="top" secondItem="az4-f7-lJd" secondAttribute="top" id="jtV-o7-gBg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Dp-SI-aJC"/>
+                    <connections>
+                        <outlet property="collectionView" destination="xNA-62-8Gd" id="5M1-fQ-agi"/>
+                        <outlet property="titleLabel" destination="Dby-e2-Hdt" id="e1O-1U-xfW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sw3-zO-fcK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2588" y="1897"/>
+        </scene>
+        <!--Markets Proxy-->
+        <scene sceneID="ARu-6H-JC8">
+            <objects>
+                <viewController id="SNa-51-c8e" customClass="MarketsProxy" customModule="BusinessDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vr0-3C-4Jk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KAn-ef-bUL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q7M-Lx-8wE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fno-d9-OI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1875" y="1069"/>
+        </scene>
+        <!--Sections Proxy-->
+        <scene sceneID="ma4-vU-22E">
+            <objects>
+                <viewController id="DIy-WO-J2w" customClass="SectionsProxy" customModule="BusinessDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w30-Sw-C2K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iY5-EH-b95"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rzn-2D-kd7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Amf-fI-Kep" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1155" y="1069"/>
+        </scene>
+        <!--Top Stories Proxy-->
+        <scene sceneID="9iN-h3-BfW">
+            <objects>
+                <viewController id="Tro-WE-v5B" customClass="TopStoriesProxy" customModule="BusinessDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EUm-cz-ooV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RFI-Mw-CcX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lBn-od-lrx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSb-Jk-VRJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2588" y="1069"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OAd-kJ-5Jy">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="9n6-fI-Y7T" customClass="TabBarController" customModule="BusinessDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8WM-wg-z3m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zrm-1f-LFS" kind="relationship" relationship="viewControllers" id="zhf-bu-6WX"/>
+                        <segue destination="Zdc-mJ-Dwz" kind="relationship" relationship="viewControllers" id="1Mh-vI-UIv"/>
+                        <segue destination="p8e-5B-EhD" kind="relationship" relationship="viewControllers" id="7Uw-kj-KdP"/>
+                        <segue destination="742-SR-G5a" kind="relationship" relationship="viewControllers" id="myw-C6-yB2"/>
+                        <segue destination="yDx-G6-FI7" kind="relationship" relationship="viewControllers" id="ZoM-68-egW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzV-fb-EH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1497" y="-348"/>
+        </scene>
+        <!--Top Stories-->
+        <scene sceneID="t3N-et-O9I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zrm-1f-LFS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Top Stories" image="tabbar-Feed" id="cdS-Rs-uLh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xLW-3P-bn6" customClass="CosmosNavigationBar" customModule="CosmosKit">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tro-WE-v5B" kind="relationship" relationship="rootViewController" id="QXf-fn-Vat"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abW-t8-pCB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2588.4057971014495" y="365.625"/>
+        </scene>
+        <!--Media Proxy-->
+        <scene sceneID="2U9-nS-eKN">
+            <objects>
+                <viewController id="lFv-sD-gLA" customClass="MediaProxy" customModule="BusinessDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hBb-F8-Pvj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mih-BH-lu7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F8S-Q0-CkG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqi-F1-pAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-417" y="1069"/>
+        </scene>
+        <!--Profile Proxy-->
+        <scene sceneID="Mph-6I-eOZ">
+            <objects>
+                <viewController id="A2r-da-4zn" customClass="ProfileProxy" customModule="BusinessDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JyN-yA-yAL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1dV-3J-Jwh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bwG-Qi-4Rh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgm-aF-Pts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="1069"/>
+        </scene>
+        <!--Markets-->
+        <scene sceneID="Bkq-t1-BUP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zdc-mJ-Dwz" customClass="ScrollingNavigationController" customModule="AMScrollingNavbar" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Markets" image="tabbar-Markets" id="2sZ-bV-0YS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RrD-mn-cUs" customClass="CosmosNavigationBar" customModule="CosmosKit">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SNa-51-c8e" kind="relationship" relationship="rootViewController" id="xFc-kO-kXC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8H5-Ip-JqO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1875.3623188405797" y="365.625"/>
+        </scene>
+        <!--Sections-->
+        <scene sceneID="2FA-GK-qd4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p8e-5B-EhD" customClass="ScrollingNavigationController" customModule="AMScrollingNavbar" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sections" image="tabbar-Sections" id="Kko-NT-BPy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sb4-Fu-1a5" customClass="CosmosNavigationBar" customModule="CosmosKit">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DIy-WO-J2w" kind="relationship" relationship="rootViewController" id="xIv-Bz-ndF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bue-X2-imx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154" y="366"/>
+        </scene>
+        <!--Media-->
+        <scene sceneID="fkF-To-MOP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="742-SR-G5a" customClass="ScrollingNavigationController" customModule="AMScrollingNavbar" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Media" image="tabbar-Media" id="6xS-ww-IpN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yTr-9i-2WY" customClass="CosmosNavigationBar" customModule="CosmosKit">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lFv-sD-gLA" kind="relationship" relationship="rootViewController" id="8yn-9X-1BU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ON1-g7-ka1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-417" y="366"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="1Ja-eh-nFd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yDx-G6-FI7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="tabbar-Settings" id="KLz-Bu-nPV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="odo-24-UXT" customClass="CosmosNavigationBar" customModule="CosmosKit">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A2r-da-4zn" kind="relationship" relationship="rootViewController" id="JTf-vu-s4H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIQ-em-T7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar-Feed" width="28" height="28"/>
+        <image name="tabbar-Markets" width="28" height="28"/>
+        <image name="tabbar-Media" width="28" height="28"/>
+        <image name="tabbar-Sections" width="28" height="28"/>
+        <image name="tabbar-Settings" width="28" height="28"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandPrimary">
+            <color red="0.80400002002716064" green="0.093999996781349182" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

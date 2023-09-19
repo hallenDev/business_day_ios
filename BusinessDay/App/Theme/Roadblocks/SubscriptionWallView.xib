@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SubscriptionWallView" customModule="BusinessDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="549"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="This article is reserved for our subscribers." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zM-xY-N6E" customClass="BDBlockerLabelShort" customModule="BusinessDay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="16" width="343" height="19.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A premium account gives you full digital access to all Business Day content." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWZ-6W-l4B" customClass="BDBlockerLabelLengthy" customModule="BusinessDay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="43" width="343" height="40.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0hE-o7-erc">
+                    <rect key="frame" x="16" y="155.5" width="343" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYO-mV-dcI" customClass="BDBlockerButton" customModule="BusinessDay" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="161.5" height="44"/>
+                            <color key="backgroundColor" name="BrandPrimary"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Nvv-Lt-vh4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="SIGN IN">
+                                <color key="titleColor" name="White"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="signIn:" destination="iN0-l3-epB" eventType="touchUpInside" id="XZa-bK-Xg8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqm-wd-9HN" userLabel="Subscribe Button" customClass="BDBlockerButton" customModule="BusinessDay" customModuleProvider="target">
+                            <rect key="frame" x="181.5" y="0.0" width="161.5" height="44"/>
+                            <color key="backgroundColor" name="BrandPrimary"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="J9e-KB-SsV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="SUBSCRIBE">
+                                <color key="titleColor" name="White"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="subscribe:" destination="iN0-l3-epB" eventType="touchUpInside" id="j1w-2F-hfH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions or problems?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6E-uD-81s" customClass="BDBlockerLabelShort" customModule="BusinessDay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="207.5" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGD-hq-Dp4" customClass="BDBlockerTextView" customModule="BusinessDay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="227" width="343" height="83"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="BrandPrimary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="83" id="tXv-83-Was"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Email helpdesk@businesslive.co.za or call 0860 52 52 00.">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-Dynamic" translatesAutoresizingMaskIntoConstraints="NO" id="SyF-JA-FHj">
+                    <rect key="frame" x="67" y="99.5" width="241" height="40"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background"/>
+            <constraints>
+                <constraint firstItem="9zM-xY-N6E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="1bL-2f-QJD"/>
+                <constraint firstItem="lWZ-6W-l4B" firstAttribute="centerX" secondItem="9zM-xY-N6E" secondAttribute="centerX" id="2XX-hO-IpJ"/>
+                <constraint firstItem="SyF-JA-FHj" firstAttribute="top" secondItem="lWZ-6W-l4B" secondAttribute="bottom" constant="16" id="4lT-JJ-1tg"/>
+                <constraint firstItem="lWZ-6W-l4B" firstAttribute="top" secondItem="9zM-xY-N6E" secondAttribute="bottom" constant="7.5" id="8No-DV-f7J"/>
+                <constraint firstItem="lWZ-6W-l4B" firstAttribute="width" secondItem="9zM-xY-N6E" secondAttribute="width" id="Ho6-Yn-tX9"/>
+                <constraint firstItem="0hE-o7-erc" firstAttribute="width" secondItem="lWZ-6W-l4B" secondAttribute="width" id="Iv2-48-tmG"/>
+                <constraint firstItem="m6E-uD-81s" firstAttribute="top" secondItem="0hE-o7-erc" secondAttribute="bottom" constant="8" id="Oli-4r-elh"/>
+                <constraint firstItem="yGD-hq-Dp4" firstAttribute="top" secondItem="m6E-uD-81s" secondAttribute="bottom" constant="-1" id="Rch-EA-mwe"/>
+                <constraint firstItem="yGD-hq-Dp4" firstAttribute="width" secondItem="m6E-uD-81s" secondAttribute="width" id="WLY-6Q-AeZ"/>
+                <constraint firstItem="0hE-o7-erc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bJ1-1Z-Tcx"/>
+                <constraint firstItem="yGD-hq-Dp4" firstAttribute="centerX" secondItem="m6E-uD-81s" secondAttribute="centerX" id="cHq-0N-M3j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9zM-xY-N6E" secondAttribute="trailing" constant="16" id="dxp-Cx-Lag"/>
+                <constraint firstItem="SyF-JA-FHj" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="eHX-Af-Bcj"/>
+                <constraint firstItem="0hE-o7-erc" firstAttribute="top" secondItem="SyF-JA-FHj" secondAttribute="bottom" constant="16" id="edB-hD-TB5"/>
+                <constraint firstItem="yGD-hq-Dp4" firstAttribute="centerX" secondItem="lWZ-6W-l4B" secondAttribute="centerX" id="fv1-Yn-znf"/>
+                <constraint firstItem="yGD-hq-Dp4" firstAttribute="width" secondItem="lWZ-6W-l4B" secondAttribute="width" id="lik-Xy-2Fy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yGD-hq-Dp4" secondAttribute="bottom" constant="20" id="x7l-sl-VCm"/>
+                <constraint firstItem="9zM-xY-N6E" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="zek-lN-I9k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="signInButton" destination="SYO-mV-dcI" id="P44-aZ-h7d"/>
+                <outlet property="subscribeButton" destination="nqm-wd-9HN" id="Ddc-Nh-H5y"/>
+                <outlet property="text1" destination="9zM-xY-N6E" id="1Jh-GV-hRe"/>
+                <outlet property="text2" destination="lWZ-6W-l4B" id="HEZ-R3-Cr6"/>
+                <outlet property="text4" destination="m6E-uD-81s" id="aKz-B7-sHl"/>
+                <outlet property="text5" destination="yGD-hq-Dp4" id="6HN-Rd-COn"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="21.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-Dynamic" width="241" height="40"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandPrimary">
+            <color red="0.80400002002716064" green="0.093999996781349182" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
